@@ -1,0 +1,11 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.2.0
+compiler:
+  solc:
+    remappings: 
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.2.0'
+wallets:
+  from_key: ${PRIVATE_KEY}
+  from_mnemonic: ${MNEMONIC}
+networks:
+  default: development
