@@ -80,7 +80,10 @@ export default {
         text-align: left;
         padding: 25px;
     }
-    .wallpaper {
-        position: ;
+    .learn-more, .worm {
+        font-family: Bona Nova;
+        font-weight: 400;
+        font-size: 16px;
+        color: #1C1C1C;
     }
 </style>
