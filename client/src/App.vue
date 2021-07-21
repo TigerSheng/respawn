@@ -1,15 +1,19 @@
 <template>
-  <Landing></Landing>
+    <Header class="nav-menu"></Header>
+    <Landing></Landing>
 </template>
 
 <script>
 import Landing from './components/Landing.vue'
+import Header from './components/Header.vue'
 
 export default {
   components: {
-    Landing
+    Landing,
+    Header
   }
 }
+
 // This starter template is using Vue 3 experimental <script setup> SFCs
 // Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
 </script>
@@ -39,6 +43,11 @@ export default {
     font-size: 20px;
     font-weight: 700;
     color: #1C1C1C;
+  }
+
+  .nav-menu {
+    position: fixed;
+    z-index: 12;
   }
 
 </style>

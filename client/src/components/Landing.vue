@@ -4,12 +4,12 @@
             <div class="greeting">
                 <span class="title"><u class="respawn">Respawn</u> the moment.</span>
                 <br>
-                <span class="subtitle">Digitally preserve and immortalize the memorable</span>
+                <span class="subtitle">Digitally preserve and immortalize the memorable.</span>
             </div>
             <hr class="line">
             <div class="buttons">
                 <div class="about">
-                    <button class="primary-button">What is Respawn</button>
+                    <button class="primary-button">What is Respawn?</button>
                     <br>
                     <br>
                     <span class="learn-more">Learn more about what we do, and how NFTs work!</span>
@@ -63,6 +63,7 @@ export default {
         width: 80vw;
         margin-top: 50px;
         min-width: 800px;
+        z-index: 5;
     }
     .buttons {
         margin-top: 0px;
