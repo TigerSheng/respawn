@@ -1,0 +1,21 @@
+.container {
+    height: 350px;
+    background: white;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+
+    .sub {
+        width: 290px;
+        text-align: center;
+        padding: 20px;
+        margin-right: 15px;
+
+        .title {
+            font-family: Bona Nova;
+            font-size: 16pt;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+    }
+}

@@ -7,8 +7,9 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   hasScrolled = false;
+  
   @HostListener('window:scroll', ['$event']) onScroll() {
-    if (window.scrollY > 5) {
+    if (window.scrollY > 200) {
       this.hasScrolled = true;
     } else {
       this.hasScrolled = false;
@@ -20,4 +21,15 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  navigateToAbout():void {
+    if (this.hasScrolled) {
+      return;
+    }
+  }
+
+  navigateToAccount(): void {
+    if (this.hasScrolled) {
+      return;
+    }
+  }
 }
