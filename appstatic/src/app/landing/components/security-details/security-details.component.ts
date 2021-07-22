@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-security-details',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./security-details.component.scss']
 })
 export class SecurityDetailsComponent implements OnInit {
+  @Input() isProcess: boolean = false;
 
   constructor() { }
 

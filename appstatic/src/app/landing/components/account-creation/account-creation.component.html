@@ -1,0 +1,26 @@
+<div class="section" [formGroup]="form">
+    <div class="names">
+        <div>
+            <input formControlName="fName" placeholder="First Name" class="small">
+            <br>
+            <span *ngIf="fNameErrors" class="warning">First name required.</span>
+        </div>
+        <div>
+            <input formControlName="lName" placeholder="Last Name" class="small">
+            <br>
+            <span *ngIf="lNameErrors" class="warning">Last name required.</span>
+        </div>
+        
+    </div>
+    <input formControlName="email" placeholder="Email address" class="big">
+    <br>
+    <span *ngIf="emailErrors" class="warning">Email must be in format: <b>john.doe@test.com</b></span>
+    <br>
+    <input formControlName="password" placeholder="Password" class="big">
+    <br>
+    <span *ngIf="pwErrors" class="warning">Password required.</span>
+    <br>
+    <input formControlName="confirmPassword" placeholder="Confirm Password" class="big">
+    <br>
+    <span *ngIf="confirmPwErrors" class="warning">Must confirm password.</span>
+</div>

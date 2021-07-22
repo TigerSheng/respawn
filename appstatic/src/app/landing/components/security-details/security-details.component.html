@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="!isProcess">
     <div class="sub">
         <span class="material-icons">&#xe32a;</span>
         <br>
@@ -27,6 +27,63 @@
             <br>
             <br>
             <span class="paragraph">Lorem ipsum</span>
+        </div>
+    </div>
+</div>
+
+<div class="container" *ngIf="isProcess">
+    <div class="sub">
+        <span class="material-icons">&#xe32a;</span>
+        <br>
+        <div>
+            <span class="title">Create Account</span>
+            <br>
+            <br>
+            <span class="paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et…</span>
+        </div>
+    </div>
+
+    <div class="sub">
+        <span class="material-icons">&#xe88d;</span>
+        <br>
+        <div>
+            <span class="title">Setup Wallet</span>
+            <br>
+            <br>
+            <span class="paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et…</span>
+        </div>
+    </div>
+
+    <div class="sub">
+        <span class="material-icons">&#xe32a;</span>
+        <br>
+        <div>
+            <span class="title">Explore Market</span>
+            <br>
+            <br>
+            <span class="paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et…</span>
+        </div>
+    </div>
+
+    <div class="sub">
+        <span class="material-icons">&#xe32a;</span>
+        <br>
+        <div>
+            <span class="title">Place Offer</span>
+            <br>
+            <br>
+            <span class="paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et…</span>
+        </div>
+    </div>
+
+    <div class="sub">
+        <span class="material-icons">&#xe32a;</span>
+        <br>
+        <div>
+            <span class="title">Celebrate</span>
+            <br>
+            <br>
+            <span class="paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et…</span>
         </div>
     </div>
 </div>
