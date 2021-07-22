@@ -1,0 +1,13 @@
+.section {
+    padding: 50px;
+
+    .names {
+        display: flex;
+        justify-content: center;
+        
+        > * {
+            margin-right: 25px;
+            margin-left: 25px;
+        }
+    }
+}

@@ -3,15 +3,20 @@ import { CommonModule } from '@angular/common';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SecurityDetailsComponent } from './components/security-details/security-details.component';
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
+import { AccountCreationComponent } from './components/account-creation/account-creation.component';
+import { ReactiveFormsModule, FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
     LandingPageComponent,
     SecurityDetailsComponent,
-    SlideshowComponent
+    SlideshowComponent,
+    AccountCreationComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [
     LandingPageComponent
