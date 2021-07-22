@@ -1,0 +1,69 @@
+.header {
+    position: fixed;
+    background: white;
+    display: flex;
+    width: 100vw;
+    padding: 30px;
+    opacity: 1;
+    transition: 0.5s linear opacity;
+
+    .title {
+        font-family: Bona Nova;
+        font-weight: 700;
+        font-size: 14pt;
+        color: #1c1c1c;
+        margin-left: 100px;
+    }
+    .nav-items {
+        justify-content: right !important;
+        float: right;
+        display: flex;
+
+        .nav-items-text {
+            font-family: Bona Nova;
+            font-weight: 700;
+            font-size: 12pt;
+            color: #1c1c1c;
+            cursor: pointer;
+        }
+
+        & > div > span {
+            margin-right: 20px;
+        }
+    }
+}
+
+.header-static {
+    position: fixed;
+    background: white;
+    display: flex;
+    width: 100vw;
+    padding: 30px;
+    opacity: 0;
+    transition: 0.5s linear opacity;
+
+    .title {
+        font-family: Bona Nova;
+        font-weight: 700;
+        font-size: 14pt;
+        color: #1c1c1c;
+        margin-left: 100px;
+    }
+    .nav-items {
+        justify-content: right !important;
+        float: right;
+        display: flex;
+
+        .nav-items-text {
+            font-family: Bona Nova;
+            font-weight: 700;
+            font-size: 12pt;
+            color: #1c1c1c;
+            cursor: default;
+        }
+
+        & > div > span {
+            margin-right: 20px;
+        }
+    }
+}

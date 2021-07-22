@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+.primary-heading {
+    font-family: Bona Nova;
+    font-size: 60pt;
+    font-weight: 700;
+    color: #1c1c1c;
+}
+
+.secondary-heading {
+    font-family: Bona Nova;
+    font-size: 19pt;
+    font-weight: 400;
+    color: #1c1c1c;
+}
+
+.paragraph {
+    font-family: Bona Nova;
+    font-weight: 400;
+    font-size: 12pt;
+    color: #1c1c1c;
+}
+
+.primary-button {
+    width: 250px;
+    height: 70px;
+    background-color: #E0402B;
+    border-radius: 12px;
+    border: none;
+    font-family: Bona Nova;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .secondary-button {
+    width: 250px;
+    height: 70px;
+    border-radius: 12px;
+    background: none;
+    border: 2px solid #1C1C1C;
+    font-family: Bona Nova;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1C1C1C;
+  }
