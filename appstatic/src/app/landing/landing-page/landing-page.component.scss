@@ -1,0 +1,29 @@
+.container {
+    background: url("../../../assets/landing-art.png");
+    height: 100vh;
+    justify-content: center;
+
+    .eye-catcher {
+        width: 90vw;
+        text-align: right;
+        margin-top: 250px;
+        min-width: 700px;
+
+        .buttons {
+            margin-top: 5px;
+            display: flex;
+            float: right;
+        
+            .about, .account {
+                justify-content: right;
+                padding: 25px;
+                width: 300px;
+                text-align: left;
+                
+                .paragraph {
+                    margin-top: 25px !important;
+                }
+            }
+        }
+    }
+}
