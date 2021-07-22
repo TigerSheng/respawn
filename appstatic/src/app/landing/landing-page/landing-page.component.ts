@@ -7,17 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor() { }
-
   ngOnInit(): void {
   }
 
-  navigateToAbout(): void {
-    return;
+  navigateTo(target: string): void {
+    const elementList = document.querySelectorAll(target);
+    console.log(elementList);
+    
+    const element = elementList[0] as HTMLElement;
+    element.scrollIntoView({ behavior: 'smooth' });
   }
 
-  navigateToAccount(): void {
-    return;
-  }
 
 }

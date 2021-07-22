@@ -6,6 +6,7 @@
     padding: 30px;
     opacity: 1;
     transition: 0.5s linear opacity;
+    z-index: 20;
 
     .title {
         font-family: Bona Nova;
@@ -18,6 +19,7 @@
         justify-content: right !important;
         float: right;
         display: flex;
+        margin-left: 25px;
 
         .nav-items-text {
             font-family: Bona Nova;
@@ -41,6 +43,7 @@
     padding: 30px;
     opacity: 0;
     transition: 0.5s linear opacity;
+    z-index: 20;
 
     .title {
         font-family: Bona Nova;

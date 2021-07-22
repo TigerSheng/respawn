@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SecurityDetailsComponent } from './components/security-details/security-details.component';
+import { SlideshowComponent } from './components/slideshow/slideshow.component';
 
 @NgModule({
   declarations: [
     LandingPageComponent,
-    SecurityDetailsComponent
+    SecurityDetailsComponent,
+    SlideshowComponent
   ],
   imports: [
     CommonModule

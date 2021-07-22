@@ -27,3 +27,16 @@
         }
     }
 }
+.about-section {
+    text-align: center;
+    width: 100vw;
+    height: 700px;
+    background: url("../../../assets/about-wallpaper.png");
+
+    .about-title {
+        font-family: Bona Nova;
+        font-weight: 700;
+        font-size: 23pt;
+        margin-top: 25px;
+    }
+}
