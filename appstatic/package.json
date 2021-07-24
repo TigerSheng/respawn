@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "aws --region us-east-2 s3 sync ./dist/appstatic s3://respawn-client-bucket --delete"
   },
   "private": true,
   "dependencies": {
