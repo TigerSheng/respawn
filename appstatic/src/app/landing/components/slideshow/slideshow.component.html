@@ -1,7 +1,43 @@
-<div class="section">
-    <span class="title">What is Respawn?</span>
-    <br>
-    <div class="slideshow">
-        ...
-    </div>
+<div class="slideshow container">
+    <mdb-carousel [controls]="true" [indicators]="true" [interval]=8000>
+        <mdb-carousel-item>
+            <div class="bg-image w-100">
+                <img src="../../../../assets/slideshow-1.jpg" class="d-block w-100" alt="..." />
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);"></div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Our Mission</h5>
+                <p>An average e-sports athlete's career only lasts 4-5 years. 
+                    At Respawn, we believe their legacies carry on beyond a few flashy highlight reels. 
+                    Here, we respawn their peak moments to supporters and fans.</p>
+            </div>
+        </mdb-carousel-item>
+    
+        <mdb-carousel-item>
+            <div class="bg-image w-100">
+                <img src="../../../../assets/slideshow-2.jpg" class="d-block w-100" alt="..." />
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);"></div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>For Content Creators</h5>
+                <p>We help you to capture your greatest moments and handle all the dirty work. 
+                    Set up your wallet with us and let us take care of the issuance of your memorabilia in any format
+                    - skins, clips, merchandises, anything that you can come up with.</p>
+            </div>
+        </mdb-carousel-item>
+    
+        <mdb-carousel-item>
+            <div class="bg-image w-100">
+                <img src="../../../../assets/slideshow-3.jpg" class="d-block w-100" alt="..." />
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);"></div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>For Fans and Collectors</h5>
+                <p>Support your favorite content creators and keep their best moment for yourself.
+                    We use NFT technology to ensure the authenticity of the moment that only you can respawn.
+                    Our transparent bidding process brings you a hassle free collecting experience.
+                </p>
+            </div>
+        </mdb-carousel-item>
+    </mdb-carousel>
 </div>
