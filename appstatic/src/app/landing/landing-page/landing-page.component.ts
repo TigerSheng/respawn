@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-landing-page',
@@ -18,5 +19,9 @@ export class LandingPageComponent implements OnInit {
     element.scrollIntoView({ behavior: 'smooth' });
   }
 
+  createAccount(form: FormGroup): void {
+    // Trigger mark form as dirty here to trigger validations before actually submitting data.
+    console.log(form);
+  }
 
 }

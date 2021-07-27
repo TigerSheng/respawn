@@ -30,7 +30,11 @@
         <br>
         <span class="about-title">What is Respawn?</span>
         <!-- TO-DO: Create the slideshow here. -->
-        
+        <br>
+        <br>
+        <app-slideshow></app-slideshow>
+        <br>
+        <br>
     </div>
     <div class="col-md-12 security">
         <app-security-details [isProcess]="true"></app-security-details>
@@ -41,6 +45,6 @@
         <br>
         <span class="paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod <br/>tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At <br/>vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata <br/>sanctus est Lorem…</span>
         <br>
-        <app-account-creation></app-account-creation>
+        <app-account-creation (onSubmit)="createAccount($event)"></app-account-creation>
     </div>
 </div>

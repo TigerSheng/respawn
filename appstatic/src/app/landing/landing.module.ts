@@ -6,6 +6,9 @@ import { SlideshowComponent } from './components/slideshow/slideshow.component';
 import { AccountCreationComponent } from './components/account-creation/account-creation.component';
 import { ReactiveFormsModule, FormsModule }   from '@angular/forms';
 
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+
+
 @NgModule({
   declarations: [
     LandingPageComponent,
@@ -16,7 +19,8 @@ import { ReactiveFormsModule, FormsModule }   from '@angular/forms';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MdbCarouselModule
   ],
   exports: [
     LandingPageComponent

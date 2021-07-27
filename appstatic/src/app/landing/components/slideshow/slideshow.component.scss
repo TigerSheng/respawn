@@ -3,11 +3,23 @@
     width: 90vw;
     text-align: center;
 
-    .title {
+    .carousel-caption {
         font-family: Bona Nova;
-        font-weight: 700;
-        font-size: 22pt;
-        color: #1c1c1c;
-        margin-left: 100px;
     }
+}
+
+h5 {
+    font-family: Bona Nova !important;
+    font-weight: 700 !important;
+    font-size: 20pt;
+}
+
+p {
+    font-family: Bona Nova !important;
+    font-weight: 400 !important;
+    font-size: 11pt;
+}
+
+mdb-carousel {
+    margin-bottom: 45px;
 }
