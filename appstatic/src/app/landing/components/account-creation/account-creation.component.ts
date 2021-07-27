@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { AccountsService } from '../../services/accounts.service';
 import { FormGroup } from '@angular/forms';
 
@@ -9,6 +9,8 @@ import { FormGroup } from '@angular/forms';
 })
 export class AccountCreationComponent implements OnInit {
   form: FormGroup;
+  @Output() onSubmit: EventEmitter<FormGroup> = new EventEmitter;
+
   constructor(private accounts: AccountsService) {
     this.form = this.accounts.form;
   }

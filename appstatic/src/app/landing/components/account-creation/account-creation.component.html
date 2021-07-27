@@ -17,11 +17,14 @@
     <br>
     <span *ngIf="emailErrors" class="warning">Email must be in format: <b>john.doe@test.com</b></span>
     <br>
-    <input formControlName="password" placeholder="Password" class="big">
+    <input formControlName="password" placeholder="Password" class="big" type="password">
     <br>
     <span *ngIf="pwErrors" class="warning">Password required.</span>
     <br>
-    <input formControlName="confirmPassword" placeholder="Confirm Password" class="big">
+    <input formControlName="confirmPassword" placeholder="Confirm Password" class="big" type="password">
     <br>
     <span *ngIf="confirmPwErrors" class="warning">Must confirm password.</span>
+    <br>
+    <br>
+    <button class="primary-button" (click)="onSubmit.emit(form)">Submit</button>
 </div>
