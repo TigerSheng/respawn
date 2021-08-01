@@ -52,4 +52,13 @@
         font-size: 23pt;
         margin-top: 25px;
     }
+
+    .alert {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .alert:not(.show) {
+        display: none;
+    }
 }
