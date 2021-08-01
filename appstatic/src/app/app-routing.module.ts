@@ -6,6 +6,11 @@ const routes: Routes = [
   {
     path: 'home',
     component: LandingPageComponent
+  },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
   }
 ];
 
