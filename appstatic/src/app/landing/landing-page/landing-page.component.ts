@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { Auth } from 'aws-amplify';
 
 @Component({
   selector: 'app-landing-page',
@@ -19,9 +20,27 @@ export class LandingPageComponent implements OnInit {
     element.scrollIntoView({ behavior: 'smooth' });
   }
 
-  createAccount(form: FormGroup): void {
+  async createAccount(form: FormGroup): Promise<void> {
     // Trigger mark form as dirty here to trigger validations before actually submitting data.
+    Object.keys(form.controls).forEach(key => {
+      form.get(key)?.markAsDirty();
+    });
     console.log(form);
+    let username = form.value.userName;
+    let password = form.value.password;
+    let email = form.value.email;
+    let given_name = form.value.fName;
+    let family_name = form.value.lName;
+    const { user } = await Auth.signUp({
+      username,
+      password,
+      attributes: {
+        email,         
+        given_name,
+        family_name
+      }
+    });
+    console.log(user);
   }
 
 }

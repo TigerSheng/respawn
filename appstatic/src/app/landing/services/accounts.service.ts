@@ -13,6 +13,7 @@ export class AccountsService {
       fName: ['', Validators.required],
       lName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
+      userName: ['', Validators.required],
       password: ['', Validators.required],
       confirmPassword: ['', Validators.required],
       ageConfirmation: ['', Validators.requiredTrue],
@@ -34,6 +35,10 @@ export class AccountsService {
 
   get lastName(): string {
     return this.form.get('lName')?.value;
+  }
+
+  get userName(): string {
+    return this.form.get('userName')?.value;
   }
 
   get emailAddress(): string {

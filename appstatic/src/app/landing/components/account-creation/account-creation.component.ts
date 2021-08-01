@@ -22,6 +22,10 @@ export class AccountCreationComponent implements OnInit {
     return this.form.get('email')?.errors && this.form.get('email')?.dirty;
   }
 
+  get userNameErrors() {
+    return this.form.get('userName')?.errors && this.form.get('userName')?.dirty;
+  }
+
   get fNameErrors() {
     return this.form.get('fName')?.errors && this.form.get('fName')?.dirty;
   }

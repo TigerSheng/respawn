@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "appstatic4c07ba52": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

@@ -13,6 +13,10 @@
         
     </div>
     <br>
+    <input formControlName="userName" placeholder="Username" class="big">
+    <br>
+    <span *ngIf="userNameErrors" class="warning">Username Required.</span>
+    <br>
     <input formControlName="email" placeholder="Email address" class="big">
     <br>
     <span *ngIf="emailErrors" class="warning">Email must be in format: <b>john.doe@test.com</b></span>
