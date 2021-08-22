@@ -1,0 +1,36 @@
+.container {
+    height: 400px;
+    width: 100vw;
+    background-color: #1C1C1C;
+    padding: 45px;
+
+    .text {
+        margin-top: 90px;
+        .main {
+            font-family: Bona Nova;
+            font-weight: 700;
+            font-size: 14pt;
+            color: white;
+            margin-left: 100px;
+            float: right;
+        }
+    
+        .secondary-heading {
+            color: white;
+            font-size: 9pt;
+            float: right;
+        }
+    }
+}
+
+.bottom {
+    background-color: white;
+
+    .designed {
+        float: left;
+        font-family: Bona Nova;
+        font-weight: 700;
+        font-size: 9pt;
+        margin-left: 30px;
+    }
+}
