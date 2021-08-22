@@ -44,7 +44,19 @@
         <span class="account-title">Create an Account</span>
         <br>
         <span class="paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod <br/>tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At <br/>vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata <br/>sanctus est Lorem…</span>
-        <br>
+        <br><br>
+        <div #alert class="alert alert-success alert-dismissible fade col-md-6" role="alert">
+            <button type="button" class="close" aria-label="Close" (click)="closeAlert(0)">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            Your account has been successfully registered.
+        </div>
+        <div #alert class="alert alert-danger alert-failure alert-dismissible fade col-md-6" role="alert">
+            <button type="button" class="close" aria-label="Close" (click)="closeAlert(1)">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            An error was encountered in the account registration process.
+        </div>
         <app-account-creation (onSubmit)="createAccount($event)"></app-account-creation>
     </div>
 </div>

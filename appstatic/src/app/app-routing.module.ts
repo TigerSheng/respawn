@@ -4,8 +4,13 @@ import { LandingPageComponent } from './landing/landing-page/landing-page.compon
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: LandingPageComponent
+  },
+  {
+    path: 'home',
+    redirectTo: '',
+    pathMatch: 'full'
   }
 ];
 

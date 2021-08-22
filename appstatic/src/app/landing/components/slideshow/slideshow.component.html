@@ -1,9 +1,9 @@
 <div class="slideshow container">
-    <mdb-carousel [controls]="true" [indicators]="true" [interval]=8000>
+    <mdb-carousel class="carousel slide" [isControls]="true" [interval]=8000 [animation]="'fade'">
         <mdb-carousel-item>
-            <div class="bg-image w-100">
-                <img src="../../../../assets/slideshow-1.jpg" class="d-block w-100" alt="..." />
-                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);"></div>
+            <div class="view w-100">
+                <img src="../../../../assets/slideshow-1.jpg" class="img-fluid w-100" alt="..." />
+                <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
             </div>
             <div class="carousel-caption d-none d-md-block">
                 <h5>Our Mission</h5>
@@ -14,9 +14,9 @@
         </mdb-carousel-item>
     
         <mdb-carousel-item>
-            <div class="bg-image w-100">
-                <img src="../../../../assets/slideshow-2.jpg" class="d-block w-100" alt="..." />
-                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);"></div>
+            <div class="view w-100">
+                <img src="../../../../assets/slideshow-2.jpg" class="img-fluid w-100" alt="..." />
+                <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
             </div>
             <div class="carousel-caption d-none d-md-block">
                 <h5>For Content Creators</h5>
@@ -27,12 +27,12 @@
         </mdb-carousel-item>
     
         <mdb-carousel-item>
-            <div class="bg-image w-100">
-                <img src="../../../../assets/slideshow-3.jpg" class="d-block w-100" alt="..." />
-                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);"></div>
+            <div class="view w-100">
+                <img src="../../../../assets/slideshow-3.jpg" class="img-fluid w-100" alt="..." />
+                <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
             </div>
             <div class="carousel-caption d-none d-md-block">
-                <h5><u>For Fans and Collectors</u></h5>
+                <h5>For Fans and Collectors</h5>
                 <p>Support your favorite content creators and keep their best moment for yourself.
                     We use NFT technology to ensure the authenticity of the moment that only you can respawn.
                     Our transparent bidding process brings you a hassle free collecting experience.
